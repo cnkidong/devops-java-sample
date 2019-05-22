@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration
 public class HelloWorldController {
-
+    
     @RequestMapping("/")
     public String sayHello() {
+        String a;
         return "Hello,World!";
     }
 }
