@@ -24,7 +24,8 @@ pipeline {
         stage ('checkout scm') {
             steps {
                 checkout(scm)
-                git 'https://github.com/runzexia/devops-java-sample'
+                sh 'ls'
+                sh 'git clone https://github.com/runzexia/devops-java-sample'
                 sh 'ls'
             }
         }
